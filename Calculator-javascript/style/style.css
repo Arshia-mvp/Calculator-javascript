@@ -1,0 +1,63 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    width: 300px;
+    margin: 0 auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 10px;
+    border: 2px solid black;
+    text-align: center;
+}
+
+.screen {
+    width: calc(100% - 20px);
+    margin-bottom: 10px;
+    height: 20px;
+    border: 2px solid black;
+}
+
+.keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.button,
+.operator,
+.clear,
+.equal-sign-1 {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.clear,
+.equal-sign-1 {
+    background-color: #ff0000de;
+    border: 2px solid black;
+}
+.clear:hover,
+.equal-sign-1:hover {
+    background-color: red;
+}
+
+.button,
+.operator {
+    background-color: rgba(0, 128, 0, 0.863);
+    border: 2px solid black;
+}
+
+.button:hover,
+.operator:hover {
+    background-color: green;
+}

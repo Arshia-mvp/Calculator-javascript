@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style/style.css">
+    </head>
+    <body>
+        <main>
+            <header>
+                <div class="container">
+                    <br>
+                    <table>
+                        <tr>
+                            <td colspan="3"><input type='text' id='result' class='screen' style="text-align: right;"></td>
+                            <td>
+                                <button type='button' onclick="clearScreen()" class="clear">C</button>
+                            </td>
+                        </tr>
+                    </table>
+            
+                    <div class="keys">
+                        <button type="button" class="button" onclick="display('7')">7</button>
+                        <button type="button" class="button" onclick="display('8')">8</button>
+                        <button type="button" class="button" onclick="display('9')">9</button>
+                        <button type="button" class="operator" onclick="display('/')">/</button>
+                        <button type="button" class="button" onclick="display('4')">4</button>
+                        <button type="button" class="button" onclick="display('5')">5</button>
+                        <button type="button" class="button" onclick="display('6')">6</button>
+                        <button type="button" class="operator" onclick="display('*')">*</button>
+                        <button type="button" class="button" onclick="display('1')">1</button>
+                        <button type="button" class="button" onclick="display('2')">2</button>
+                        <button type="button" class="button" onclick="display('3')">3</button>
+                        <button type="button" class="operator" onclick="display('-')">-</button>
+                        <button type="button" class="button" onclick="display('0')">0</button>
+                        <button type="button" class="button" onclick="display('.')">.</button>
+                        <button type="button" class="button equal-sign-1" onclick="solve()">=</button>
+                        <button type="button" class="operator" onclick="display('+')">+</button>
+                    </div>
+                </div>
+            </header>
+        </main>
+        <script src="./js/app.js"></script>
+    </body>
+</html>
